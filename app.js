@@ -1,7 +1,7 @@
 
 function onPageLoad(){
   console.log("Document Loaded");
-  var url="https://lovelgeorge.pythonanywhere.com/get_location_names";
+  var url="http://harshitdolka.pythonanywhere.com/get_location_names";
   $.get(url,function(data,status){
       console.log("Got response from location request");
      ;
@@ -9,15 +9,15 @@ function onPageLoad(){
      var location=data.locations;
      for(var i in location){
        d[location[i].toUpperCase()]=null;
-       
+
      }
       $('input.autocomplete').autocomplete({
         data:d,
       });
-      
+
 
   })
-} 
+}
 
 function get_Values(){
   var area=parseFloat(document.getElementById("area").value);
@@ -35,7 +35,7 @@ function getEstimatedPrice(){
   var bathrooms = list[2]
   var location = list[3]
 
-  var url = "https://lovelgeorge.pythonanywhere.com/predict_home_price"; 
+  var url = "http://harshitdolka.pythonanywhere.com/get_location_names";
   $.post(url,{
       total_sqft:sqft,
       bhk: bhk,
@@ -51,7 +51,4 @@ function getEstimatedPrice(){
 $(document).ready(function(){
   onPageLoad();
   $('select').formSelect();
-  
-
-  
 });

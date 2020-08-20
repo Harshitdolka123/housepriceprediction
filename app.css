@@ -1,6 +1,9 @@
 
+body{
+  background-color: #E3F2FD
+}
 #result{
-  
+
   border: 1px solid black;
   height: 50px;
 
