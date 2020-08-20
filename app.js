@@ -1,7 +1,7 @@
 
 function onPageLoad(){
   console.log("Document Loaded");
-  var url="http://harshitdolka.pythonanywhere.com/get_location_names";
+  var url="https://harshitdolka.pythonanywhere.com/get_location_names";
   $.get(url,function(data,status){
       console.log("Got response from location request");
      ;
@@ -35,7 +35,7 @@ function getEstimatedPrice(){
   var bathrooms = list[2]
   var location = list[3]
 
-  var url = "http://harshitdolka.pythonanywhere.com/get_location_names";
+  var url = "https://harshitdolka.pythonanywhere.com/get_location_names";
   $.post(url,{
       total_sqft:sqft,
       bhk: bhk,
