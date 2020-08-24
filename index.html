@@ -7,27 +7,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app.css" />
-  <title>Document</title>
+  <title>House Rate Prediction App</title>
 </head>
 <body>
-  <header class="page-footer black">
-    <div class="row">
-      <div class="col s4">
-      </div>
-    <div class="footer-copyright col s4">
-      <div>
-        © 2020 <a target="_blank" title="Go to My Site"href="https://hdportfolio.herokuapp.com/">Harshit Dolka</a>. All rights reserved.
-      </div>
-    </div>
-  </div>
-</header>
+  <div class="parallax">
   <form class="container" method="POST">
-    <h1 class="flow-text center">Bengaluru House Rate Prediction ( Linear Regression )</h1>
+    <h1 class="flow-text red-text center">Bengaluru House Rate Prediction App ( Linear Regression )</h1>
     <div class="row">
       <div class="col s0 m2 l3"></div>
       <div class="input-field col s12 m8 l6">
         <input placeholder="Enter in Square Feet" value="1000" name="total_sqft" id="area" type="number" class="validate">
-        <label for="area">Area</label>
+        <label for="area">Choose the Area of the House</label>
       </div></div>
       <div class="col s0 m2 l3"></div>
 
@@ -42,7 +32,7 @@
             <option value="4">4 BHK</option>
             <option value="5">5 BHK</option>
           </select>
-          <label>Choose BHK</label>
+          <label>Choose the BHK of the House</label>
         </div>
         <div class="col s0 m2 l3"></div>
       </div>
@@ -50,7 +40,7 @@
       <div class="row">
         <div class="col s0 m2 l3"></div>
         <div class="col s12 m8 l6">
-          <label>Choose Number of Bathrooms</label>
+          <label>Choose Number of Bathrooms in the House</label>
           <p>
             <label>
               <input name="uibath" value="1" class="with-gap" type="radio" checked />
@@ -87,7 +77,7 @@
 
         <div class="input-field col s12 m8 l6">
           <input type="text" id="location" class="autocomplete">
-          <label for="autocomplete-input">Location</label>
+          <label id="l" for="autocomplete-input">Choose the Location of the House</label>
         </div>
     <div class="s0 m2 l3"></div>
   </div>
@@ -95,7 +85,7 @@
   <div class="row center">
     <div class="col s0 m2 l3"></div>
     <div class="col s12 m8 l6">
-      <button class="btn waves-effect waves-light" type="button" onclick="getEstimatedPrice()">Check Price
+      <button class="btn waves-effect waves-light red white-text darken-4 btn-large" type="button" onclick="getEstimatedPrice()">Check Price
         <i class="material-icons right">send</i>
       </button>
     </div>
@@ -115,6 +105,18 @@
     <div class="col s0 m3 l4"></div>
   </div>
 </form>
+</div>
+<footer class="page-footer black">
+  <div class="row">
+    <div class="col s3 m4 l5">
+    </div>
+  <div class="footer-copyright">
+    <div>
+      © 2020 <a target="_blank" title="Go to My Site" href="https://hdportfolio.herokuapp.com/">Harshit Dolka</a>. All rights reserved.
+    </div>
+  </div>
+</div>
+</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="app.js"></script>
 </body>

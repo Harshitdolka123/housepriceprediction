@@ -14,8 +14,6 @@ function onPageLoad(){
       $('input.autocomplete').autocomplete({
         data:d,
       });
-
-
   })
 }
 
