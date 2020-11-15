@@ -33,7 +33,7 @@ function getEstimatedPrice(){
   var bathrooms = list[2]
   var location = list[3]
 
-  var url = "https://harshitdolka.pythonanywhere.com/get_location_names";
+  var url = "https://harshitdolka.pythonanywhere.com/predict_home_price";
   $.post(url,{
       total_sqft:sqft,
       bhk: bhk,
